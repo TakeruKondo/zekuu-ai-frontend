@@ -34,7 +34,7 @@ const ControlNetPanel = ({
 
       // Update the UI with the preprocessed image
       setPreprocessedImage({
-        url: `http://localhost:5001/api/uploads/${response.processed_filename}`,
+        url: `http://http://192.168.50.198:5001/api/uploads/${response.processed_filename}`,
         filename: response.processed_filename,
         preprocessor: response.preprocessor
       });
@@ -97,7 +97,7 @@ const ControlNetPanel = ({
       // Notify parent component with the generated image
       onImagesGenerated([
         {
-          url: `http://localhost:5001${generateResponse.result_url}`,
+          url: `http://lhttp://192.168.50.198:5001${generateResponse.result_url}`,
           filename: generateResponse.result_filename,
           prompt,
           negativePrompt,

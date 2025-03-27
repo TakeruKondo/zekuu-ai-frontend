@@ -118,7 +118,7 @@ function App() {
           });
           
           const processedImageData = {
-            url: `http://localhost:5001/api/uploads/${processResponse.processed_filename}`,
+            url: `http://http://192.168.50.198:5001/api/uploads/${processResponse.processed_filename}`,
             filename: processResponse.processed_filename,
             preprocessor
           };
@@ -136,7 +136,7 @@ function App() {
           });
           
           handleImagesGenerated([{
-            url: `http://localhost:5001${generateResponse.result_url}`,
+            url: `http://http://192.168.50.198:5001${generateResponse.result_url}`,
             filename: generateResponse.result_filename,
             prompt,
             negativePrompt,
@@ -154,7 +154,7 @@ function App() {
           });
           
           handleImagesGenerated([{
-            url: `http://localhost:5001${generateResponse.result_url}`,
+            url: `http://http://192.168.50.198:5001${generateResponse.result_url}`,
             filename: generateResponse.result_filename,
             prompt,
             negativePrompt,

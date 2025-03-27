@@ -26,7 +26,7 @@ export const checkHealth = async () => {
 // In src/services/api.js
 export const uploadImage = async (formData) => {
   try {
-    const response = await fetch('http://localhost:5001/api/upload', {
+    const response = await fetch('http://192.168.50.198:5001/api/upload', {
       method: 'POST',
       body: formData, // This contains the image file
     });
